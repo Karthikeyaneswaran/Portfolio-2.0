@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthikeyan E | Portfolio</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Karthikeyan E, Front-End Developer, Full-Stack Developer, and MERN Stack specialist. View projects, skills, education, and work experience.">
+  <meta name="keywords" content="Karthikeyan E, Front-End Developer, Full-Stack Developer, MERN Stack, React Developer, Web Developer Portfolio, Coimbatore">
+  <meta name="author" content="Karthikeyan E">
+  <!-- Google Fonts - Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Vanilla CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body class="dark-theme">
+  <!-- Glowing Background Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#" class="logo" id="nav-logo">
+        <span class="gradient-text">KARTHIKEYAN.E</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#timeline" class="nav-link">Timeline</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="mobile-menu-btn" class="btn btn-icon-only mobile-only" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="gradient-text logo-text">KARTHIKEYAN.E</span>
+      <button id="mobile-drawer-close" class="btn btn-icon-only" aria-label="Close menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <nav class="drawer-links">
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#timeline" class="drawer-link">Timeline</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#certifications" class="drawer-link">Certifications</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </nav>
+    <!-- Drawer actions removed -->
+  </div>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-info">
+          <div class="badge-container">
+            <span class="pulse-dot"></span>
+            <span class="badge-text" id="hero-badge">Available for Full-Stack Opportunities</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="gradient-text hero-name" id="hero-name">KARTHIKEYAN E</span>
+          </h1>
+          <h2 class="hero-subtitle" id="hero-subtitle">
+            Front-End Developer | Full-Stack Developer | MERN Stack
+          </h2>
+          <p class="hero-description" id="hero-summary">
+            Motivated Front-End Developer and Information Technology undergraduate with hands-on experience building responsive, scalable web applications using HTML5, CSS3, JavaScript (ES6+), TypeScript, React.js, and the MERN stack.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              View Work <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="Karthikeyan E Resume.pdf" target="_blank" class="btn btn-secondary" id="resume-link">
+              View Resume <i data-lucide="external-link"></i>
+            </a>
+          </div>
+          <div class="social-pills" id="hero-socials">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-container">
+            <div class="cube-wrapper">
+              <div class="cube-face cube-front">React</div>
+              <div class="cube-face cube-back">Node</div>
+              <div class="cube-face cube-left">Mongo</div>
+              <div class="cube-face cube-right">Express</div>
+              <div class="cube-face cube-top">JS</div>
+              <div class="cube-face cube-bottom">TS</div>
+            </div>
+            <div class="visual-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Stats Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <h2 class="section-title text-center"><span class="gradient-text">About Me</span></h2>
+        <div class="glass-card about-card">
+          <div class="about-image-wrapper">
+            <div class="profile-pic-container">
+              <img src="Profile pic.jpg" alt="Karthikeyan E" class="about-profile-pic">
+            </div>
+          </div>
+          <div class="about-content-wrapper">
+            <div class="about-text-content">
+              <p id="about-detailed-summary">
+                Information Technology undergraduate skilled in REST API integration, debugging, agile workflows, and UI/UX best practices. Holds industry-recognized certifications from Meta, IBM, Google, and IIT Kharagpur. Actively seeking full-stack development opportunities to deliver clean, impactful software.
+              </p>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-num" id="stat-projects">3+</span>
+                <span class="stat-label">Core Projects</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num" id="stat-certs">4</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num" id="stat-education">GPA 8.7</span>
+                <span class="stat-label" id="stat-education-label">B.Tech IT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <h2 class="section-title"><span class="gradient-text">Technical Skills</span></h2>
+        <p class="section-subtitle">A curated summary of technologies, tools, and methodologies I specialize in.</p>
+        <div class="skills-grid" id="skills-container">
+          <!-- Rendered dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience & Education Timeline -->
+    <section class="section timeline-section" id="timeline">
+      <div class="container">
+        <h2 class="section-title text-center"><span class="gradient-text">My Journey</span></h2>
+        <p class="section-subtitle text-center">Interactive timeline showing my academic and professional highlights.</p>
+        
+        <div class="timeline-container-grid">
+          <!-- Work Experience Column -->
+          <div class="timeline-column">
+            <h3 class="column-title"><i data-lucide="briefcase"></i> Experience</h3>
+            <div class="timeline-items" id="experience-timeline">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+          
+          <!-- Education Column -->
+          <div class="timeline-column">
+            <h3 class="column-title"><i data-lucide="graduation-cap"></i> Education</h3>
+            <div class="timeline-items" id="education-timeline">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="projects-header-flex">
+          <div>
+            <h2 class="section-title"><span class="gradient-text">Featured Projects</span></h2>
+            <p class="section-subtitle">Some of the web applications I built, from front-end designs to full-stack systems.</p>
+          </div>
+          <!-- Project Filter Bar & Search Removed -->
+        </div>
+        
+        <div class="projects-grid" id="projects-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        <h2 class="section-title text-center"><span class="gradient-text">Certifications</span></h2>
+        <p class="section-subtitle text-center">Industry credentials earned from global technology leaders.</p>
+        <div class="certs-grid" id="certifications-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title text-center"><span class="gradient-text">Contact</span></h2>
+        
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="glass-card contact-info-card">
+            <h3>Contact Details</h3>
+            <p class="contact-description">Reach out directly via email, phone, or find me on competitive programming & professional networks.</p>
+            
+            <div class="contact-methods">
+              <a href="mailto:karthikeyaneswaran2006@gmail.com" class="contact-method-item" id="contact-email-link">
+                <div class="method-icon"><i data-lucide="mail"></i></div>
+                <div class="method-content">
+                  <span class="method-label">Email</span>
+                  <span class="method-val" id="contact-email">karthikeyaneswaran2006@gmail.com</span>
+                </div>
+              </a>
+              
+              <a href="tel:9600630469" class="contact-method-item" id="contact-phone-link">
+                <div class="method-icon"><i data-lucide="phone"></i></div>
+                <div class="method-content">
+                  <span class="method-label">Phone</span>
+                  <span class="method-val" id="contact-phone">9600630469</span>
+                </div>
+              </a>
+              
+              <div class="contact-method-item">
+                <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                <div class="method-content">
+                  <span class="method-label">Location</span>
+                  <span class="method-val" id="contact-location">Palladam, Tamil Nadu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <marquee behavior="scroll" direction="left" scrollamount="6" class="copyright">
+        &copy; <span id="footer-year">2026</span> <span id="footer-name">KARTHIKEYAN E</span>. All Rights Reserved.
+      </marquee>
+    </div>
+  </footer>
+
+  <!-- Configurator Modal Removed -->
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
